@@ -210,6 +210,17 @@
           </iconset>
          </property>
         </item>
+        <item>
+         <property name="text">
+          <string>Almanac</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>:/graphicGui/tabSSO.png</normalon>
+           <selectedon>:/graphicGui/tabSSO-selected.png</selectedon>
+          </iconset>
+         </property>
+        </item>
        </widget>
       </item>
       <item row="1" column="0">
@@ -2966,6 +2977,20 @@
           </item>
          </layout>
         </widget>
+        <widget class="QWidget" name="stackedWidgetPage9">
+         <layout class="QGridLayout" name="gridLayout_27">
+          <item row="0" column="0">
+           <widget class="AstroCalcAlmanacWidget" name="astroCalcAlmanac" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
        </widget>
       </item>
      </layout>
@@ -2981,11 +3006,6 @@
    <container>1</container>
   </customwidget>
   <customwidget>
-   <class>StelCloseButton</class>
-   <extends>QPushButton</extends>
-   <header>gui/StelCloseButton.hpp</header>
-  </customwidget>
-  <customwidget>
    <class>AngleSpinBox</class>
    <extends>QSpinBox</extends>
    <header>AngleSpinBox.hpp</header>
@@ -2994,6 +3014,12 @@
    <class>QChartView</class>
    <extends>QGraphicsView</extends>
    <header>QtCharts/qchartview.h</header>
+  </customwidget>
+  <customwidget>
+   <class>AstroCalcAlmanacWidget</class>
+   <extends>QWidget</extends>
+   <header>AstroCalcAlmanacWidget.hpp</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources>
