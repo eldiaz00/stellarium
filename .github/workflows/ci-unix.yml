@@ -11,7 +11,7 @@ on:
 
 jobs:
   ci-freebsd-qt5:
-    name: "FreeBSD (x86_64 qt5)"
+    name: "FreeBSD (x86_64; qt5)"
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, '[ci skip]') && !contains(github.event.head_commit.message, '[skip ci]') && !contains(github.actor, 'transifex')"
 
@@ -28,7 +28,7 @@ jobs:
         # When using rsync, you can define copyback: false to not copy files back from the VM in to the host.
         copyback: false
         prepare: |
-          pkg install -y bash gcc g++ cmake qt5-buildtools qt5-charts qt5-concurrent qt5-core qt5-declarative qt5-gui qt5-location qt5-multimedia qt5-network qt5-opengl qt5-qmake qt5-script qt5-serialport qt5-widgets qxlsx Xvfb
+          pkg install -y cmake qt5-buildtools qt5-charts qt5-concurrent qt5-core qt5-declarative qt5-gui qt5-location qt5-multimedia qt5-network qt5-opengl qt5-qmake qt5-script qt5-serialport qt5-widgets qxlsx Xvfb
 
         run: |
           mkdir builds
