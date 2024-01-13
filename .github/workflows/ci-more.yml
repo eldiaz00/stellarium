@@ -1,5 +1,5 @@
 #
-# Implementation of Continuous Integration process for linux and macOS by Github actions (with extra additionals...)
+# Implementation of Continuous Integration process for linux by Github actions (with extra additionals...)
 #
 name: "CI"
 
